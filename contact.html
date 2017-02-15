@@ -14,7 +14,7 @@
 	<div id="top">
 
 		<div id="topcontainer">
-			<h1>Maria Wong</h1>
+			<h1>Maria Wong</h1> <!--can make this into a link that leads to index page-->
 			<nav id="pages">
 				<a href="index.html">About</a>
 				<a href="portfolio.html">Portfolio</a>
@@ -31,23 +31,23 @@
 			<div id="form">
 				<label> 
 					Name
-					<input type="text" name="Name" placeholder="John Smith"> 
-				</label>
+				</label> <!--Only label goes in label; input goes on outside-->
+				<input type="text" name="Name" placeholder="John Smith">
 				<label>
 					Email   <!--name attribute used to reference elements in js-->
-					<input type="text" name="Email" placeholder="example@gmail.com">
 				</label>
+				<input type="text" name="Email" placeholder="example@gmail.com">
 				<label>
 					Message
-					<textarea name="Message"></textarea>
 				</label>
+				<textarea name="Message"></textarea>
 				<input id="button" type="submit" name="submit" value="Submit"><!--can also use button element-->
 			</div>
 		</form>	
 		
-		<section id="sidebar">
+		<aside>
 			<h3>Connect with Me</h3>
-			<nav id="online"> 
+			<div id="online"><!--div, not nav, here because nav only for main page nagivation for site-->
 				<div class="iconbox">
 					<a id="github" href="https://github.com/mwong770"><img src ="assets/images/github.png" alt="GitHubIcon"></a>
 					<div class="text">Check out my projects.</div>
@@ -60,8 +60,8 @@
 					<a id="stackoverflow" href="http://stackoverflow.com/story/mwong770"><img src ="assets/images/stackoverflow.png" alt="Stackoverflow Icon"></a>
 					<div class="text">Read some of my comments.</div>
 				</div>		
-			</nav>
-		</section>
+			</div>
+		</aside>
 
 	</div>
 		

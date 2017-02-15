@@ -145,7 +145,7 @@ textarea {
 }
 
 label, textarea {
-	padding-bottom: 20px;
+	padding-top: 18px;
 }
 
 #button {
@@ -155,7 +155,7 @@ label, textarea {
 	color: #ffffff;
 	font-size: medium;
 	padding: 6px 0;
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 #button:hover {
@@ -235,7 +235,7 @@ span {
 }
 
 /*to avoid clipping left hover text box*/
-#sidebar {
+aside {
 	overflow: visible; 
 }
 
@@ -259,7 +259,7 @@ span {
 
 /*Social links hover functionality ends here.*/
 
-#sidebar {
+aside {
 	float: left;
 	width: 270px;
 	background-color: #ffffff;
