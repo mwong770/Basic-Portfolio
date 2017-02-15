@@ -1,6 +1,7 @@
 /*border and padding included in elements width and height
 so doesn't change when add border/padding*/
-* {box-sizing: border-box; 
+* {
+	box-sizing: border-box; 
 }
 
 /*step 1 of 3 to make sticky footer*/
@@ -28,29 +29,19 @@ a {
 	color: #777777;
 }
 
-div > h1 {
+h1 {
 	background-color: #4aaaa5;
 	color: #ffffff;
 	padding: 25px;
 	float: left;
 }
 
-h1, h2 {
-	margin: 24px;
-}
-
 h2, h3 {
 	color: #4aaaa5;
 }
 
-h2 {
-	margin-left: 0;
-	font-size: 30px;
-}
-
 #top {
 	background-color: #ffffff;
-	border-color: #cccccc;
 	height: 108px;
 	margin-bottom: 30px;
 	border-bottom: solid #cccccc 2px;
@@ -62,6 +53,15 @@ h2 {
 	width: 960px;
 }
 
+h1 {
+	margin: 24px;
+}
+
+h2 {
+	margin-left: 24px 24px 24px 0;
+	font-size: 30px;
+}
+
 h3 {
 	border-bottom: solid #cccccc 2px;
 	padding: 0 0 20px 0;
@@ -69,7 +69,7 @@ h3 {
 	width: 175px;/*to shorten bottom border width*/
 }
 
-/*icons*/
+/*page navigation links*/
 nav > a {
 	padding: 2px;
 }
@@ -80,11 +80,12 @@ nav > a {
 	padding-top: 55px;
 }
 
-/*puts divider between page navigation links*/
+/*puts divider line between page navigation links*/
 #pages > a:not(:last-child) {
 	border-right: solid 1px #777777;
 }
 
+/*puts space between page navigation links.*/
 #pages > a {
 	padding: 0 13px 0 7px;
 }
@@ -94,31 +95,6 @@ nav > a {
 	overflow: auto;
 	width: 960px;
 	margin: 0 auto;
-}
-
-#maria {
-	height: 200px;
-	width: 200px;
-	float: left;
-	margin-right: 25px;
-}
-
-#sidebar {
-	float: left;
-	width: 270px;
-	background-color: #ffffff;
-	border: solid 1px #dddddd;
-	padding: 10px 30px 30px 40px;
-}
-
-#online {
-	padding-top: 5px;
-}
-
-nav > a> img {
-	width: 52px;
-	height: 52px;
-	text-align: left;
 }
 
 article, form, #portfolio {
@@ -137,115 +113,34 @@ article, form, #portfolio {
 }
 
 #portfoliobase {
-	float:left;
+	float: left;
+}
+
+#maria {
+	height: 200px;
+	width: 200px;
+	float: left;
+	margin-right: 25px;
 }
 
 p {
 	line-height: 2;
 }
 
-#holder1, #holder2, #holder3, #holder4 {
-	margin-bottom: 29px;
-}
-
-#holder5 {
-	margin-bottom: 29px;
-}
-
-#holder2, #holder4 {
-	margin-left: 32px;
-}
-
-#holder1, #holder2 {
-	margin-top: 15px;
-}
-
-.hmargin {
-	margin-left: 32px;
-}
-
-.holders {
-	width: 275px;
-	height: 206px;
-}
-
-.projects {
-	float:left;
-	position:relative;
-}
-
-/*Online links hover functionality starts here.*/
-
-.test > a> img, nav > a > img {
-	width: 52px;
-	height: 52px;
-	text-align: left;
-	float:left;
-}
-
-.test {
-	position:relative;
-	width: 52px;
-	height: 52px;
-	float:left;
-	margin: 0px 5px;
-}
-
-#online {
-	float:left;
-}
-
-#sidebar {
-	overflow:auto;
-	overflow: visible; /*to avoid clipping left hover text box*/
-}
-
-.text {
-	position: absolute;
-	bottom:0;
-	right:0;
-	background: #4aaaa5;
-	color:white;
-	padding:9px;
-	display:none;
-	border: solid 2px;
-	border-radius: 1em;
-}
-
-.test:hover .text {
-	display:initial;
-	height: 80px;
-	width: 110px;
-}
-
-/*Online links hover functionality ends here.*/
-
-span {
-	position: absolute;
-	bottom: 40px;
-	left:0;
-	width: 275px;
-	background-color: #4aaaa5;
-	color: #ffffff;
-	text-align: center;
-	font-size: 20px;
-	padding: 15px;
-}
-
 /*to remove the default inline-block display*/
 label, input, textarea {
-	display:block;
+	display: block;
 	width: 100%;
-}
-
-textarea {
-	height: 200px;
-	margin-top: 8px;
 }
 
 input {
 	padding: 6px 0 6px 10px;
 	line-height: 1.5;
+	margin-top: 8px;
+}
+
+textarea {
+	height: 200px;
 	margin-top: 8px;
 }
 
@@ -270,6 +165,112 @@ label, textarea {
 	color: transparent;
 }
 
+#holder1, #holder2, #holder3, #holder4 {
+	margin-bottom: 29px;
+}
+
+#holder5 {
+	margin-bottom: 29px;
+}
+
+#holder2, #holder4 {
+	margin-left: 32px;
+}
+
+#holder1, #holder2 {
+	margin-top: 15px;
+}
+
+/*margin for text in holders 2 and 4*/
+.hmargin {
+	margin-left: 32px;
+}
+
+/*all placeholders*/
+.holders {
+	width: 275px;
+	height: 206px;
+}
+
+/*placeholders box with text*/
+.projects {
+	float: left;
+	position: relative;
+}
+
+/*placeholder text*/
+span {
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	width: 275px;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	font-size: 20px;
+	padding: 15px;
+}
+
+/*Social links hover functionality starts here.*/
+
+.iconbox > a> img {
+	width: 52px;
+	height: 52px;
+	text-align: left;
+	float: left;
+}
+
+/*box containing icon and text*/
+.iconbox {
+	position: relative;
+	width: 52px;
+	height: 52px;
+	float: left;
+	margin: 0 5px;
+}
+
+/*box holding all social links and hover text*/
+#online {
+	float: left;
+}
+
+/*to avoid clipping left hover text box*/
+#sidebar {
+	overflow: visible; 
+}
+
+.text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #4aaaa5;
+	color: white;
+	padding: 9px;
+	display: none;
+	border: solid 2px;
+	border-radius: 1em;
+}
+
+.iconbox:hover .text {
+	display: initial;
+	height: 80px;
+	width: 110px;
+}
+
+/*Social links hover functionality ends here.*/
+
+#sidebar {
+	float: left;
+	width: 270px;
+	background-color: #ffffff;
+	border: solid 1px #dddddd;
+	padding: 10px 30px 30px 40px;
+}
+
+#online {
+	padding-top: 5px;
+}
+
 /*position absolute/bottom 0/width 100% is step 3 of 3 to make sticky footer*/
 footer {
 	clear: both;
@@ -281,8 +282,8 @@ footer {
 	padding: 30px;
 	font-size: small;
 	position: absolute; 
-	bottom:0px;			
-	width:100%;
+	bottom: 0;			
+	width: 100%;
 }
 
 
