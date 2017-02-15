@@ -10,58 +10,64 @@
 </head>
 
 <body>
-	<div id="container">
 
-		<div id="top">
+	<div id="top">
 
-			<div id="topcontainer">
-				<h1 class="mainheader">Maria Wong</h1>
-				<nav id="pages">
-					<a href="index.html">About</a>
-					<a href="portfolio.html">Portfolio</a>
-					<a href="contact.html">Contact</a>
-				</nav>
+		<div id="topcontainer">
+			<h1>Maria Wong</h1>
+			<nav id="pages">
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+
+	</div>
+
+	<div id="middle">
+		
+		<form>
+			<h2>Contact</h2>
+			<div id="form">
+				<label> 
+					Name
+					<input type="text" name="Name" placeholder="John Smith"> 
+				</label>
+				<label>
+					Email   <!--name attribute used to reference elements in js-->
+					<input type="text" name="Email" placeholder="example@gmail.com">
+				</label>
+				<label>
+					Message
+					<textarea name="Message"></textarea>
+				</label>
+				<input id="button" type="submit" name="submit" value="Submit"><!--can also use button element-->
 			</div>
-
-		</div>
-
-		<div id="middle">
+		</form>	
 		
-			<form>
-				<h1 class="header">Contact</h1>
-				<div id="form">
-					<label> 
-						Name
-						<input type="text" name="Name" placeholder="John Smith">
-					</label>
-					<label>
-						Email
-						<input type="text" name="Email" placeholder="example@gmail.com">
-					</label>
-					<label>
-						Message
-						<textarea name="Message"></textarea>
-					</label>
-					<input id="button" type="submit" name="submit" value="Submit"><!--can also use button element-->
+		<section id="sidebar">
+			<h3>Connect with Me</h3>
+			<nav id="online"> 
+				<div class="test">
+					<a id="github" href="https://github.com/mwong770"><img src ="assets/images/github.png" alt="GitHubIcon"></a>
+					<div class="text">Check out my projects.</div>
 				</div>
-			</form>	
-		
-			<section id="sidebar">
-				<h3>Connect with Me</h3>
-				<nav id="online"> 
-					<a href="https://github.com/mwong770"><img src ="assets/images/github.png" alt="GitHub Icon"></a>
-					<a href="https://www.linkedin.com/in/maria-wong-116119113?trk=nav_responsive_tab_profile"><img src ="assets/images/linkedin.png" alt="LinkedIn Icon"></a>
-					<a href="http://stackoverflow.com/story/mwong770"><img src ="assets/images/stackoverflow.png" alt="Stackoverflow Icon"></a>
-				</nav>
-			</section>
+				<div class="test">
+					<a id="linkedin" href="https://www.linkedin.com/inmaria-wong-116119113?trk=nav_responsive_tab_profile"><img src ="assets/images/linkedin.png" alt="LinkedIn Icon"></a>
+					<div class="text">Find out what other skills I have.</div>
+				</div>
+				<div class="test">
+					<a id="stackoverflow" href="http://stackoverflow.com/story/mwong770"><img src ="assets/images/stackoverflow.png" alt="Stackoverflow Icon"></a>
+					<div class="text">Read some of my comments.</div>
+				</div>		
+			</nav>
+		</section>
 
-		</div>
-	
-	</div>	
+	</div>
 		
-		<footer>
-			&copy;Copyright2017 Maria Wong
-		</footer>
+	<footer>
+		&copy;Copyright2017 Maria Wong
+	</footer>
 	
 </body>
 
