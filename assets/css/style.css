@@ -42,7 +42,7 @@ h2, h3 {
 
 #top {
 	background-color: #ffffff;
-	height: 108px;
+	overflow: auto;
 	margin-bottom: 30px;
 	border-bottom: solid #cccccc 2px;
 }
@@ -54,7 +54,7 @@ h2, h3 {
 }
 
 h1 {
-	margin: 24px;
+	margin: 0 0 0 24px;
 }
 
 h2 {
