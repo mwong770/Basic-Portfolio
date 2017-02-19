@@ -112,10 +112,6 @@ article, form, #portfolio {
 	padding-top: 25px;
 }
 
-#portfoliobase {
-	float: left;
-}
-
 #maria {
 	height: 200px;
 	width: 200px;
@@ -165,45 +161,47 @@ label, textarea {
 	color: transparent;
 }
 
-#holder1, #holder2, #holder3, #holder4 {
-	margin-bottom: 29px;
-}
-
-#holder5 {
-	margin-bottom: 29px;
-}
-
-#holder2, #holder4 {
-	margin-left: 32px;
-}
-
-#holder1, #holder2 {
-	margin-top: 15px;
-}
-
-/*margin for text in holders 2 and 4*/
-.hmargin {
-	margin-left: 32px;
-}
-
-/*all placeholders*/
-.holders {
-	width: 275px;
-	height: 206px;
-}
-
 /*placeholders box with text*/
 .projects {
 	float: left;
 	position: relative;
+	width: 275px;
+	height: 206px;
+}
+
+/*first placeholder*/
+#project1 {
+	margin: 10px 0 49px 0;
+}
+ 
+#project2 {
+	margin: 10px 0 49px 37px;
+}
+
+#project3 {
+	margin: 0 0 49px 0;
+}
+
+#project4 {
+	margin: 0 0 49px 37px;
+}
+
+#project5 {
+	margin: 0 0 25px 0;
+}
+
+/*all placeholders*/
+.holders {
+	width: 100%;
+	height: 100%;
 }
 
 /*placeholder text*/
 span {
 	position: absolute;
-	bottom: 40px;
+	bottom: 10px;
 	left: 0;
-	width: 275px;
+	width: 100%;
 	background-color: #4aaaa5;
 	color: #ffffff;
 	text-align: center;
@@ -248,7 +246,7 @@ aside {
 	padding: 9px;
 	display: none;
 	border: solid 2px;
-	border-radius: 1em;
+	border-radius: 16px;
 }
 
 .iconbox:hover .text {
