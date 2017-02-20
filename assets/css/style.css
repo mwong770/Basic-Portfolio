@@ -154,11 +154,16 @@ label, textarea {
 	margin-top: 15px;
 }
 
-#button:hover {
+/*#button:active  {
 	background-image: url("../images/thanks.jpg");
 	width: 232px;
 	height: 80px;
 	color: transparent;
+}*/
+
+#button:hover {
+	background-color: #aa4a7d;
+	color: #7daa4a;
 }
 
 /*placeholders box with text*/
