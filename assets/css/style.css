@@ -107,7 +107,7 @@ article, form, #portfolio {
 	padding: 10px 30px 30px 30px;
 }
 
-#articlebase, #form, #portfoliobase  {
+.maincontent  {
 	border-top: solid #dddddd 3px;
 	padding-top: 25px;
 }
