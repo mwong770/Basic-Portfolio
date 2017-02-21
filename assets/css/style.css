@@ -170,6 +170,7 @@ label, textarea {
 	width: 95px;
 	height: 34px;
 	color: transparent;
+	border: solid 2px #4aaaa5;
 }
 
 /*placeholders box with text*/
