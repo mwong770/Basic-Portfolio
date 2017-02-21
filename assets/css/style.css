@@ -26,7 +26,12 @@ h1, h2, h3, span, .text {
 }
 
 a {
-	color: #777777;
+	color: #4aaaa5;
+}
+
+a:hover {
+	color: #aa4a7d;
+	font-weight: bold;
 }
 
 h1 {
@@ -107,7 +112,7 @@ article, form, #portfolio {
 	padding: 10px 30px 30px 30px;
 }
 
-.maincontent  {
+.maincontent {
 	border-top: solid #dddddd 3px;
 	padding-top: 25px;
 }
@@ -154,16 +159,17 @@ label, textarea {
 	margin-top: 15px;
 }
 
-/*#button:active  {
-	background-image: url("../images/thanks.jpg");
-	width: 232px;
-	height: 80px;
-	color: transparent;
-}*/
-
 #button:hover {
 	background-color: #aa4a7d;
 	color: #7daa4a;
+}
+
+/*active must come after hover to work*/
+#button:active {
+	background-image: url("../images/thanks.jpg");
+	width: 95px;
+	height: 34px;
+	color: transparent;
 }
 
 /*placeholders box with text*/
@@ -172,6 +178,10 @@ label, textarea {
 	position: relative;
 	width: 275px;
 	height: 206px;
+}
+
+.projects:hover {
+	opacity: .5;
 }
 
 /*first placeholder*/
@@ -202,7 +212,7 @@ label, textarea {
 }
 
 /*placeholder text*/
-span {
+.projects > span {
 	position: absolute;
 	bottom: 10px;
 	left: 0;
@@ -214,13 +224,10 @@ span {
 	padding: 15px;
 }
 
-/*Social links hover functionality starts here.*/
-
-.iconbox > a> img {
-	width: 52px;
-	height: 52px;
-	text-align: left;
+/*box holding all social links and hover text*/
+#online {
 	float: left;
+	padding-top: 5px;
 }
 
 /*box containing icon and text*/
@@ -230,37 +237,42 @@ span {
 	height: 52px;
 	float: left;
 	margin: 0 5px;
+	background-size: 52px 52px;
 }
 
-/*box holding all social links and hover text*/
-#online {
-	float: left;
+/*to make anchors to social links clickable*/
+.image {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
-/*to avoid clipping left hover text box*/
-aside {
-	overflow: visible; 
+#github {
+	background-image: url("../images/github.png");	
 }
 
-.text {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	background: #4aaaa5;
-	color: white;
-	padding: 9px;
-	display: none;
-	border: solid 2px;
-	border-radius: 16px;
+#linkedin {
+	background-image: url("../images/linkedin.png");
 }
 
-.iconbox:hover .text {
-	display: initial;
-	height: 80px;
-	width: 110px;
+#stackoverflow {
+	background-image: url("../images/stackoverflow.png");	
 }
 
-/*Social links hover functionality ends here.*/
+#github:hover {
+	background-image: url("../images/inversegithub.png");
+	/*background-size: 52px 52px;*/
+}
+
+#linkedin:hover {
+	background-image: url("../images/inverselinkedin.png");
+	/*background-size: 52px 52px;*/
+}
+
+#stackoverflow:hover {
+	background-image: url("../images/inversestackoverflow.png");
+	/*background-size: 52px 52px;*/
+}
 
 aside {
 	float: left;
@@ -268,10 +280,6 @@ aside {
 	background-color: #ffffff;
 	border: solid 1px #dddddd;
 	padding: 10px 30px 30px 40px;
-}
-
-#online {
-	padding-top: 5px;
 }
 
 /*position absolute/bottom 0/width 100% is step 3 of 3 to make sticky footer*/
