@@ -117,6 +117,10 @@ article, form, #portfolio {
 	padding-top: 25px;
 }
 
+#formcontent {
+	padding-top: 10px;
+}
+
 #maria {
 	height: 200px;
 	width: 200px;
@@ -270,9 +274,12 @@ label, textarea {
 	/*background-size: 52px 52px;*/
 }
 
+/*set a different size and position to match the other smaller, centered icons*/
 #stackoverflow:hover {
 	background-image: url("../images/inversestackoverflow.png");
-	/*background-size: 52px 52px;*/
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 aside {

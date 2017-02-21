@@ -26,22 +26,28 @@
 
 	<div id="middle">
 		
+		<!--method post sends data as http post transaction. Otherwise, appends data to url-->
 		<form action="mailto:mwong770@yahoo.com" method="post" enctype="text/plain">
 			<h2>Contact</h2>
-			<div class="maincontent">
+			<div class="maincontent" id="formcontent">
 				<label> 
 					Name
 				</label> <!--Only label goes in label; input goes on outside-->
-				<input type="text" name="Name" placeholder="John Smith">
+				<!--autofocus selects the element the browser will focus on when the form is displayed-->
+				<!--required ensures the user provides a value-->
+				<input required autofocus type="text" name="name" placeholder="John Smith">
 				<label>
 					Email   <!--name attribute used to reference elements in js-->
 				</label>
-				<input type="text" name="Email" placeholder="example@gmail.com">
+				<!--type email ensures the user provides a value with @ -->
+				<input required type="email" name="email" placeholder="example@gmail.com">
 				<label>
 					Message
 				</label>
-				<textarea name="Message"></textarea>
-				<input id="button" type="submit" name="submit" value="Submit"><!--can also use button element-->
+				<textarea required name="Message"></textarea>
+				<!--can also use button element but different browsers may submit different values when 
+				button is used in an html form-->
+				<input id="button" type="submit" name="submit" value="Submit">
 			</div>
 		</form>	
 		
