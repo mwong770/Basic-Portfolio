@@ -43,6 +43,7 @@ h1 {
 	color: #ffffff;
 	padding: 25px;
 	float: left;
+	margin: 0 0 0 24px;
 }
 
 h2, h3 {
@@ -60,10 +61,6 @@ h2, h3 {
 header {
 	margin: 0 auto;
 	width: 960px;
-}
-
-h1 {
-	margin: 0 0 0 24px;
 }
 
 h2 {
@@ -100,7 +97,6 @@ nav > a {
 }
 
 #middle {
-	clear: both;
 	overflow: auto;
 	width: 960px;
 	margin: 0 auto;
