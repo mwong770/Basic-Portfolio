@@ -36,7 +36,7 @@ My first portfolio
 * Users can view a photo of me
 * Users can click on 'Portfolio' to see placeholder project images with project names
 * Users can click on 'Contact' to complete a form with their questions or comments that is emailed to me
-* Users can click on an icon that links to my GitHub, LinkIn, and StackOverflow pages
+* Users can click on an icon that links to my GitHub, LinkedIn, and StackOverflow pages
 
 
 ## <a name="developer"></a> :bust_in_silhouette: Developer
