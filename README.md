@@ -1,3 +1,4 @@
+
 # Best-Friend-Finder
 
 My first portfolio
@@ -48,4 +49,5 @@ My first portfolio
 If you have any questions or comments, feel free to message me on [LinkedIn](https://www.linkedin.com/in/maria-wong/).
 
  ### Thanks for checking out my first portfolio!
+
 
