@@ -1,7 +1,5 @@
 
-# Best-Friend-Finder
-
-My first portfolio
+# My First Portfolio
 
 [Check Out Basic-Portfolio](https://mwong770.github.io/Basic-Portfolio/)
 
